@@ -1,0 +1,66 @@
+.detail-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .detail-card {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .detail-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #ff7f50;
+  }
+  
+  .detail-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .detail-content h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .detail-content p {
+    font-size: 1rem;
+    margin: 10px 0 20px;
+  }
+  
+  .save-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .save-btn:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .detail-content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .detail-content p {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .home-header {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff7f50, #ffa07a);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-header h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Lobster', cursive;
+  }
+  
+  .search-input {
+    width: 80%;
+    max-width: 600px;
+    padding: 15px;
+    border: 2px solid #ffa07a;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #ff7f50;
+    box-shadow: 0px 4px 8px rgba(255, 127, 80, 0.2);
+  }
+  
+  .search-btn {
+    padding: 15px 25px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .search-btn:hover {
+    background-color: #ff6347;
+    transform: translateY(-2px);
+  }
+  
+  .results-container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .result-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .result-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .result-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #ffa07a;
+  }
+
+  .loading {
+    font-size: 16px;
+    color: #007bff;
+    margin-top: 10px;
+  }
+  
+  .error {
+    font-size: 16px;
+    color: #e74c3c;
+    margin-top: 10px;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .search-input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .results-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
