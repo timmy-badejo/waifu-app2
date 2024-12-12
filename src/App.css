@@ -1,0 +1,75 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  color: #ff7f50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff6347;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+
+.home-page, .detail-page, .saved-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.search-bar {
+  margin: 20px 0;
+}
+
+.results-grid, .saved-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.result-card img, .saved-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
